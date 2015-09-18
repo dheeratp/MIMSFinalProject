@@ -1,0 +1,4 @@
+_Android app, that watches your every step_
+
+Pedometer is an application for Android phones.
+

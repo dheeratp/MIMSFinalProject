@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/margin" 
+    android:textColor="@color/textbody"
+    android:background="@color/screen_background">
+ 
+  
+   <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+       
+        android:id = "@+id/container" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/mapitaly"
+        android:background="@drawable/mapitaly05"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+   
+
+    <citytrail.pedometer.AnimationView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
+
+    <LinearLayout android:id="@+id/row_1"
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        >
+    
+        <LinearLayout android:id="@+id/box_parent"
+            android:orientation="vertical"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+           
+            android:paddingRight="@dimen/margin"
+            android:textColor="@color/textbody"
+            android:layout_weight="1">
+           
+        <TextView android:id="@+id/parent_name"
+             android:textSize="20dp" 
+             android:textStyle="bold"
+              android:textColor="@color/personnamecolor"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal" 
+              android:background="@color/display_background" 
+              android:paddingLeft="@dimen/padding" 
+              android:paddingRight="@dimen/padding" 
+              android:paddingTop="@dimen/padding"
+              android:text="Garfield"/>
+
+           <!--   <ImageView
+                android:id="@+id/pet1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="67dp"
+                android:layout_marginRight="67dp"
+                android:background="@drawable/pet1" />-->
+              
+            <TextView android:id="@+id/step_value"
+               android:textSize="12dp" 
+                android:textColor="@color/textbody"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" 
+                android:background="@color/display_background" 
+                android:paddingLeft="@dimen/padding" 
+                android:paddingRight="@dimen/padding" 
+                android:paddingTop="@dimen/padding"
+                android:text=""/>
+           
+             <TextView android:id="@+id/parent_coins"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/textbody"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp" 
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"
+                />
+             
+             
+              <!-- <TextView android:id="@+id/parent_goal"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/step_count" 
+                 android:textColor="@color/textbody"
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"/>-->
+
+        </LinearLayout>
+      
+        <LinearLayout android:id="@+id/box_child"
+            android:orientation="vertical" 
+             android:textColor="@color/textbody"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:paddingRight="@dimen/margin"
+            android:layout_weight="1">
+               
+            
+            
+         <TextView android:id="@+id/child_name"
+             android:textSize="20dp" 
+              android:textStyle="bold"
+              android:textColor="@color/personnamecolor"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal" 
+              android:background="@color/display_background" 
+              android:paddingLeft="@dimen/padding" 
+              android:paddingRight="@dimen/padding" 
+              android:paddingTop="@dimen/padding"
+              android:text="Odie"/>
+            
+          
+            <TextView android:id="@+id/log_data_text_view"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/textbody"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:background="@color/display_background" 
+                android:textSize="12dp" 
+                android:paddingLeft="@dimen/padding" 
+                android:paddingRight="@dimen/padding" 
+                android:paddingTop="@dimen/padding"
+                android:text="" />
+          
+              <TextView android:id="@+id/child_coins"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/textbody"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp" 
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"
+                />
+               
+             <!--  <TextView android:id="@+id/child_goal"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/textbody"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/step_count" 
+              
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"/> --> 
+                         
+        </LinearLayout>
+         <LinearLayout
+        android:id="@+id/desired_pace_control"
+        android:paddingTop="@dimen/row_spacing" 
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+               <Button android:id="@+id/leaderboardBtn"
+            android:text="Leaderboard"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+                <Button android:id="@+id/profileBtn"
+            android:text="Profile"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+               
+        
+        </LinearLayout>
+
+    </LinearLayout>
+    
+           
+        
+
+    <!-- Desired pace/speed row -->
+    <LinearLayout
+        android:id="@+id/desired_pace_control"
+        android:paddingTop="@dimen/row_spacing" 
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+       <!--  Button "-", for decrementing desired pace/speed -->
+        <Button android:id="@+id/button_desired_pace_lower"
+            android:text="Leaderboard"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <!-- Container for desired pace/speed -->
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="@dimen/desired_pace_width"
+            android:layout_height="wrap_content">
+            
+            <TextView android:id="@+id/desired_pace_label"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desired_pace"/>
+        
+          <!--   Current desired pace/speed -->
+            <TextView android:id="@+id/desired_pace_value"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/desired_pace"
+                android:layout_width="@dimen/desired_pace_width"
+                android:layout_height="wrap_content"/>
+        
+        </LinearLayout>
+
+       <!--  Button "+", for incrementing desired pace/speed -->
+        <Button android:id="@+id/button_desired_pace_raise"
+            android:text="Profile"
+             android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>  
+   
+</LinearLayout>
